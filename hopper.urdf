@@ -107,9 +107,26 @@
     </collision>
   </link>
 
-  <joint name = "leg" type="planar">
+  <link name = "leg_theta"/>
+  <link name = "leg_x"/>
+  <link name = "leg_y"/>
+
+
+
+  <joint name = "legx" type="prismatic">
     <parent link = "ground"/>
+    <child link ="leg_x"/>
+    <axis xyz="1 0 0"/>
+  </joint>
+  <joint name = "legy" type="prismatic">
+    <parent link = "leg_x"/>
+    <child link ="leg_y"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name = "legtheta" type="continuous">
+    <parent link = "leg_theta"/>
     <child link ="leg"/>
+    <axis xyz="0 1 0"/>
   </joint>
 
   <joint name = "z0" type="prismatic">
