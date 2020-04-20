@@ -112,8 +112,8 @@
 
 
   <joint name ="ground_is_world" type="fixed">
-    <parent name ="world"/>
-    <child name = "ground"/>
+    <parent link ="world"/>
+    <child link = "ground"/>
   </joint>
   <joint name = "legx" type="prismatic">
     <parent link = "ground"/>
