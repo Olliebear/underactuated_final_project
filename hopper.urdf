@@ -107,7 +107,6 @@
     </collision>
   </link>
 
-  <link name = "leg_theta"/>
   <link name = "leg_x"/>
   <link name = "leg_y"/>
 
@@ -124,7 +123,7 @@
     <axis xyz="0 0 1"/>
   </joint>
   <joint name = "legtheta" type="continuous">
-    <parent link = "leg_theta"/>
+    <parent link = "leg_y"/>
     <child link ="leg"/>
     <axis xyz="0 1 0"/>
   </joint>
