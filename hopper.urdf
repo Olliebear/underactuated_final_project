@@ -20,8 +20,8 @@
 
     <inertial>
       <origin xyz="0 0 0.5"/>
-      <mass value= "10" />
-      <inertia iyy="10" ixx="5" izz="5" ixy="0" iyz="0" ixz="0"/>
+      <mass value= "1" />
+      <inertia iyy="1" ixx="1" izz="1" ixy="0" iyz="0" ixz="0"/>
 
     </inertial>
 
