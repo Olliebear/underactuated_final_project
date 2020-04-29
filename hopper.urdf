@@ -28,7 +28,7 @@
     <visual>
       <origin xyz= "0 0 0.5"/>
       <geometry>
-        <box size = "0.05 0.2 1.05"/>
+        <box size = "0.05 0.2 1.1"/>
       </geometry>
     </visual>
     <visual>
@@ -39,7 +39,7 @@
     </visual>
 
     <collision>
-      <origin xyz= "0 0 1.1"/>
+      <origin xyz= "0 0 1.15"/>
       <geometry>
         <box size = "0.2 0.2 .1"/>
       </geometry>
