@@ -112,6 +112,7 @@
     <parent link = "leg_x"/>
     <child link ="leg_y"/>
     <axis xyz="0 0 1"/>
+    <limit lower="0"/>
   </joint>
   <joint name = "legtheta" type="continuous">
     <parent link = "leg_y"/>
