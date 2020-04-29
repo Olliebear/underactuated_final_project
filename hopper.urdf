@@ -45,6 +45,11 @@
       <geometry>
         <cylinder radius = "0.05" length = ".2"/>
       </geometry>
+      <drake:proximity_properties>
+        <drake:elastic_modulus value = "1e8"/>
+        <drake:mu_static value="0.7"/>
+        <drake:mu_dynamic value = "0.7"/>
+      </drake:proximity_properties>
     </collision>
   </link>
 
