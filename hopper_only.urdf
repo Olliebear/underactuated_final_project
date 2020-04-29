@@ -78,6 +78,9 @@
       <material name="red"/>
     </visual>
   </link>
+  
+  <link name = "leg_x"/>
+  <link name = "leg_y"/>
 
   <joint name = "legx" type="prismatic">
     <parent link = "world"/>
