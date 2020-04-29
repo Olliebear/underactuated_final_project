@@ -84,7 +84,6 @@
       </geometry>
       <material name="red"/>
     </visual>
-    
   </link>
 
   <link name = "ground">
@@ -132,7 +131,7 @@
     <child link = "slide"/>
     <axis xyz = "0 0 1"/>
     <origin xyz="0 0 1"/>
-    <limit lower=""-0.8" upper="0"/>
+    <limit lower="-0.8" upper="0"/>
   </joint>
 
   <joint name = "hip" type="continuous">
