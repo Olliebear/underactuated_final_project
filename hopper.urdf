@@ -134,7 +134,7 @@
   <joint name = "z0" type="prismatic">
     <parent link="leg"/>
     <child link = "slide"/>
-    <axis xyz = "0 0 -1"/>
+    <axis xyz = "0 0 1"/>
     <origin xyz="0 0 1"/>
   </joint>
 
