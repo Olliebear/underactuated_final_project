@@ -45,11 +45,6 @@
       <geometry>
         <cylinder radius = "0.05" length = ".2"/>
       </geometry>
-      <drake:proximity_properties>
-        <drake:elastic_modulus value = "1e8"/>
-        <drake:mu_static value="0.7"/>
-        <drake:mu_dynamic value = "0.7"/>
-      </drake:proximity_properties>
     </collision>
   </link>
 
@@ -99,13 +94,6 @@
       <geometry>
         <box size = "100 1 2"/>
       </geometry>
-
-      <drake:proximity_properties>
-        <drake:elastic_modulus value = "1e8"/>
-        <drake:mu_static value="0.7"/>
-        <drake:mu_dynamic value = "0.7"/>
-      </drake:proximity_properties>
-
     </collision>
   </link>
 
@@ -138,19 +126,21 @@
     <axis xyz="0 1 0"/>
   </joint>
 
-  <joint name = "z0" type="prismatic">
-    <parent link="leg"/>
-    <child link = "slide"/>
-    <axis xyz = "0 0 1"/>
-    <origin xyz="0 0 1"/>
-    <limit lower="-0.8" upper="0"/>
-  </joint>
+
 
   <joint name = "hip" type="continuous">
     <parent link="slide"/>
     <child link="body"/>
     <axis xyz="0 1 0"/>
     <origin xyz="0 0 0"/>
+  </joint>
+
+  <joint name = "z0" type="prismatic">
+    <parent link="leg"/>
+    <child link = "slide"/>
+    <axis xyz = "0 0 1"/>
+    <origin xyz="0 0 1"/>
+    <limit lower="-0.8" upper="0"/>
   </joint>
 
   <transmission type = "SimpleTransmission" name = "spring">
